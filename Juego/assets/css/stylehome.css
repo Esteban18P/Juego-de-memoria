@@ -1,0 +1,176 @@
+.stylebody {
+
+    background-color: rgb(255, 153, 94);
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.styleheader {
+
+    background-color: rgb(36, 36, 37);
+    background-image: url(../img/arbol.jpg);
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    justify-content: space-between;
+    border-bottom: black 2px solid;
+}
+
+.styleicon {
+    height: 80px;
+    width: 90PX;
+    margin-left: 10px;
+    margin: 45px;
+}
+
+.headicon {
+
+    height: 55px;
+    width: 60PX;
+    margin-left: 10px;
+    margin: 5px 5px 5px 15px;    
+}
+
+.styleul {
+
+    margin: 15px;
+    display: flex;
+}
+
+.styleli {
+
+    list-style: none;    
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 0px 20px 0px 20px;
+}
+
+.stylelink {
+
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 80%;
+}
+
+.stylelink:hover {
+    
+    color: rgb(74, 74, 75);
+}
+
+.stylemain {
+
+    background-color: rgb(205 208 210);
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.styletl {
+
+    font-size: 30px;
+    font-family: Verdana;
+    color: rgb(255, 52, 52);
+}
+
+.styleh {
+
+    padding: 25px 0px 25px 0px;
+}
+
+.styleselection {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.styleimg {
+
+    background-color: rgba(205, 209, 211, 0.925);
+    width: 50%;
+    padding: 15px;
+}
+
+.styletext {
+
+    background-color: rgba(205, 209, 211, 0.925);
+    width: 50%;
+    padding: 35px;
+    font-size: 27px;
+}
+
+.styleinv {
+
+    background-color: rgba(205, 209, 211, 0.925);
+    width: 100%;
+    padding: 40px;
+}
+
+.stylefooter {
+
+    background-color: rgb(45 45 45);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 201px;
+}
+
+.stylegit {
+
+    display: flex;
+    margin: 15px;
+}
+
+.styleusu {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.stylesmall {
+
+    display: flex;
+}
+
+.small {
+
+    font-size: 15px;
+    margin: 2px 5px;
+    color: white;
+}
+
+@media screen and (max-width:500px){
+
+    .styleselection {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .styleimg {
+
+        width: 100%;
+    }
+
+    .styletext {
+
+        width: 100%;
+        padding: 5px;
+    }
+
+    .styleinv {
+
+        width: 100%;
+        padding: 5px;
+    }
+    
+}

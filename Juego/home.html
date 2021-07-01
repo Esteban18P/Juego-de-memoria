@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="./assets/css/stylehome.css">
+    </head>
+
+    <body class="stylebody">
+
+        <header class="styleheader">
+
+            <img class="headicon" src="./assets/img/number.png">
+
+            <nav class="himg">
+                <ul class="styleul">
+                    <li class="styleli" id="BtnInicio" style="border: rgb(180, 88, 255) 2px solid;"><a class="stylelink">INICIO</a></li>
+                    <li class="styleli" id="BtnInicio" style="border: rgb(255, 196, 0) 2px solid;"><a href="juego.html" class="stylelink">IR AL JUEGO</a></li>
+                    <li class="styleli" id="BtnReglas" style="border: rgb(21, 255, 0) 2px solid;"><a class="stylelink">REGLAS DEL JUEGO</a></li>
+                    <li class="styleli" id="BtnObjetivos" style="border: rgb(1, 90, 255) 2px solid;"><a class="stylelink">OBJETIVO</a></li>
+                    <li class="styleli" style="border: rgb(255, 20, 20) 2px solid;"><a class="stylelink" href="LyR.html">SALIR</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="stylemain">
+            <h3 class="styletl styleh" id="titulo">Introducción</h3>  
+                <section class="styleselection">
+
+                    <div class="styleimg" id="imagen"><img src="./assets/img/imgIntro.jpg"></div>
+
+                    <div class="styletext">
+                        <p id="texto" >Por medio de este juego interactivo queremos demostrar algunos aspectos positivos que necesitamos
+                           en lo que viene siendo un juego para una población diversa, algunos de estos aspectos nos ayudan 
+                           en la agilidad mental, social y física, las cuales nos ayudan a reforzar las habilidades cognitivas. </p>
+                    </div>
+
+                </section>
+        </main>
+
+        <script>
+
+          function cambiarI(){
+                document.getElementById("titulo").innerHTML = "Introduccion";
+                document.getElementById("texto").innerText = "Por medio de este juego interactivo queremos demostrar algunos aspectos positivos que necesitamos en lo que viene siendo un juego para una población diversa, algunos de estos aspectos nos ayudan en la agilidad mental, social y física, las cuales nos ayudan a reforzar las habilidades cognitivas. ";
+                document.getElementById("imagen").innerHTML = '<div class="styleimg"><img src="./assets/img/imgIntro.jpg"></div>';
+          }
+          document.getElementById("BtnInicio").onclick = function (){
+            cambiarI();
+          }
+
+          function cambiarR(){
+                document.getElementById("titulo").innerHTML = "Reglas del juego";
+                document.getElementById("texto").innerText = "Este juego consiste en un tablero de ocho fichas de ambos lados, las cuales estarán en el sentido contrario, la idea principal es hacer que las personas encuentren el par de fichas con los números iguales. Volteando las fichas una por una y si coincide gana puntos y si no, la ficha volverá a la posición inicial y así sucesivamente, el tablero nos permite conformar pares de fichas con la misma fruta. Para hacer más emocionante el juego, cada nivel tendrá un tiempo y una cierta cantidad de fichas por encontrar, para pasar de nivel el jugador tendrá que haber terminado la partida completa así haya o no utilizado las vidas.";
+                document.getElementById("imagen").innerHTML = '<div class="styleimg"><img src="./assets/img/juego.png"></div>';
+          }
+          document.getElementById("BtnReglas").onclick = function (){
+            cambiarR();
+          }
+
+          function cambiarO(){
+                document.getElementById("titulo").innerHTML = "Objetivo";
+                document.getElementById("texto").innerText = "OBJETIVOS DEL JUEGO: Obtener los pares de fichas con las imágenes de los numeros iguales. Completar cada nivel correctamente para pasar al siguiente. Lograr pasar el nivel en el tiempo determinado. El jugador debe de tratar de no utilizar sus vidas si no es necesario.\n" + "\n OBJETIVOS PEROSNALES: Estimular la agilidad mentalAumenta la constancia en las personas  Amplia la concentración en los jugadores Refuerzan las habilidades cognitivas ";
+                document.getElementById("imagen").innerHTML = '<div class="styleimg"><img src="./assets/img/imgObj.jpg"></div>';
+          }
+          document.getElementById("BtnObjetivos").onclick = function (){
+            cambiarO();
+          }
+
+        </script>
+
+        <footer class="stylefooter">
+
+            <div class="stylegit">
+
+            <img class="styleicon" src="./assets/img/number.png">
+
+                <div class="styleusu">
+
+                    <h3 style="font-size: 30px; color: rgb(0, 255, 55);">NUMBERWINS</h3>
+
+                    <div class="stylesmall">
+
+                      <small class="small">Estefanía Cuesta * </small>
+                      <small class="small">Esteban Castellar * </small>
+                      <small class="small">Yesica Estrada * </small>
+                      <small class="small">Sandra Locarno * </small>
+                      <small class="small">Esnaider Pava</small>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+        
+    </body>
+</html>
