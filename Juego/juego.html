@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Numberwins</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./assets/css/juego.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+
+    <header class="cabecera-principal">
+        <img src="">
+        <h1>Numberwins - Juego de Pares</h1>
+    </header>
+
+    <div class="contenedor-vidas">
+        <!-- vidas -->
+        <span>vidas: </span>
+        <img src="./assets/img/corazon.png">
+        <img src="./assets/img/corazon.png">
+        <img src="./assets/img/corazon.png">
+        <img src="./assets/img/corazon.png">
+        <img src="./assets/img/corazon.png">
+        <!-- <img src="../img/corazon.png"><img src="../img/corazon.png"><img src="../img/corazon.png"> -->
+    </div>
+
+    <div class="contenedor-hora">
+        <span class="hora">00</span>
+        <span class="minuto">00</span>
+        <span class="segundo">00</span>
+    </div>
+    <div class="clear"></div>
+
+    <div class="contenedor">
+
+</div>
+
+    <br>
+
+    <center>
+        <a href="home.html">Salir</a>
+    </center>
+
+    <div id="contenedor-mensaje_victoria" class="ocultar-mensaje">
+        <div id="mensaje-victoria">
+            <h1>Felicitaciones!!</h1><br>
+            <p>Usted ha ganado</p> 
+            <img src="./assets/img/gano.gif" alt="victoria" width=350px>
+            <button class="btn">Otra vez?</button> 
+        </div>
+    </div>
+    <div id="contenedor-mensaje_derrota" class="ocultar-mensaje">
+        <div id="mensaje-derrota">
+            <h1>Lo sentimos!!</h1><br>
+            <p>Usted ha perdido.</p>
+            <img src="./assets/img/perdio.gif" alt="victoria" width=350px>
+            <button class="btn">Otra vez?</button>     
+        </div>
+    </div>
+
+    <script src="./assets/js/juego.js"></script>
+</body>
+</html>

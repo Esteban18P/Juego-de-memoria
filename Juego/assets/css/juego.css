@@ -1,0 +1,125 @@
+.contenedor{
+    max-width: 900px;
+    width: 100%;
+    min-height: 300px;
+    border: dashed 1px #808080;
+    padding: 10px; 
+    margin: 0 auto;
+    
+    display: grid;
+    grid-template-columns: repeat(4,120px);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item{
+    width: 60px;
+    height:90px;
+    border: solid .5px #000;  
+    background-image: url(../img/interrogacion-icon.png);
+    background-repeat:   no-repeat; 
+    background-position:5px 10px; 
+    background-size: 50px;
+    display:inline-block; 
+    margin:10px auto;  
+    cursor: pointer;
+}
+
+.item:hover {
+
+    box-shadow: 1px 5px 6px #454545;
+    transition:all 0.5s;
+}
+
+.checked-item{
+    background-image: url(../img/checked-icon.png);
+} 
+.sin-fondo-item{
+    background-image: none;
+}
+
+/* .img-logo{
+    width:120px;
+    margin: 0 auto;
+    display:block;
+
+} */
+
+.cabecera-principal{
+    margin-bottom: 10px;
+}
+.titulo-juego{
+    text-align: center;
+}
+
+.contenedor-vidas img{
+    width: 40px;
+    margin: 5px;
+
+}
+
+.contenedor-hora{
+    float: left;
+    text-align: right;
+    width: 50%;
+}
+.contenedor-vidas{
+    float: left;
+    width: 50%;
+}
+.contenedor-vidas span{
+    font-size: 30px;
+    font-weight: bold;
+    margin-right:5px;
+    margin-top: 20px;
+}
+
+.clear{
+    clear: both;
+} 
+
+.numero-carta{
+    float: left;
+    font-size: 30px;
+    line-height: 3;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#contenedor-mensaje_victoria, #contenedor-mensaje_derrota{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000ad;
+}
+
+#mensaje-victoria, #mensaje-derrota{
+    min-height: 300px;
+    background: white;
+    top: 20%;
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.ocultar-mensaje{
+    display: none;
+}
+
+.btn{
+    width: 120px;
+    height: 30px;
+    margin-bottom: 5px;
+    background: rgb(169, 248, 202);
+    border: solid #628a64 1px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+}
